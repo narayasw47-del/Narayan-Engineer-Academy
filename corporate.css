@@ -1,0 +1,841 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'jost', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 86px;
+    z-index: 1;
+    background-color: #f3f3f3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo{
+  position: fixed;
+  top: 9px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    font-family: 'jost', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333333;
+    margin: 5px 11px;
+    transition: all 0.5s ease-in-out;
+
+}
+nav ul li{
+    padding: 24px 24px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333333;
+  
+}
+nav ul li a:hover{
+    color: #2F80ED;
+}
+#contact{
+    position: relative;
+    padding: 0px 22px;
+    top: 4px;
+    height: 67px;
+    border-radius: 9px;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #2F80ED;
+    transition: all 0.5s ease-in-out;
+}
+#contact a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+#contact:hover{
+    background-color: #002E6C;
+}
+.fa-bars{
+    visibility: hidden;
+}
+.hero{
+    background-image: url("img/backgroundimg.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 760px;
+    width: 100vw;
+}
+.hero-text{
+    padding: 237px 50px;
+    width: 41%;
+    font-size: x-large;
+
+}
+.hero-text p{
+    padding-top: 33px;
+}
+#color{
+    color: #2F80ED;
+}
+.hero-btn{
+    padding: 27px 63px;
+    margin-top: 27px;
+    border-radius: 13px;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #2F80ED;
+    transition: all 0.5s ease-in-out;
+    color: #f3f3f3;
+    font-family: 'jost', sans-serif;
+}
+
+.hero-btn a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+.hero-btn:hover{
+    background-color: #002E6C;
+
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+   
+  
+}
+.mySlides img{
+    height: 700px;
+    width: 800px;
+}
+.hero-img{
+  margin-top: 60px;
+  /* overflow: hidden; */
+}
+
+
+.mySlides {display: none;}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .experience img{
+    mix-blend-mode: multiply;
+    height: 100px;
+  }
+
+  .experience{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    place-items: center;
+    margin: 65px 0px;
+  }
+  .upskilling{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'jost', sans-serif;
+  }
+  .upimg img{
+    height: 300px;
+  }
+  .whyup{
+    margin: 0px 43px;
+    font-size: 24px;
+    width: 50%;
+    font-family: 'jost', sans-serif;
+  }
+  #whys{
+    color: #535B61;
+  }
+  #resizer{
+    font-size: 47px;
+  }
+  .support{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 70px;
+  }
+  .company{
+    display: flex;
+
+
+  }
+  .narayan{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 40px 50px;
+  
+    
+  }
+  .supporttext{
+    margin-left: 21px;
+    margin-top: 17px;
+    font-size: larger;
+    font-family: 'jost', sans-serif;
+  }
+  .support p{
+    padding: 9px 250px;
+  }
+  .square{
+    height: 910px;
+    width: 370px;
+    background-color: #2F80ED;
+    border-radius: 12px;
+
+  }
+  .tech{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    place-items: center;
+    margin: 65px 27px;
+  }
+  .techimg img{
+    height: 290px;
+    width: 370px;
+    border-radius: 12px;
+  }
+  .teching2 img{
+    height: 100px;
+    width: 100px;
+    margin-top: -56px;
+    margin-left: 20px;
+  }
+  .techtexting1{
+    padding-left: 17px;
+    font-size: 21px;
+    color: #ffffff;
+    font-family: 'jost', sans-serif;
+  }
+  .techpara{
+    padding: 1px 15px;
+    font-size: large;
+    color: #ffffff;
+    font-family: 'jost', sans-serif;
+  }
+  #retext{
+    font-size: 17px;
+  }
+  .conversation{
+   background-color: #535B61;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 490px;
+    width: 89%;
+    margin-left: 66px;
+    margin-right: 22px;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+.conversation h1{
+    padding: 31px 1px;
+    font-size: xx-large;
+    color: #ffffff;
+}
+.conversation p{
+    padding: 0px 60px;
+    font-size: 23px;
+    color: #ffffff;
+}
+.conv-btn{
+    --width: 350px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background: #E65F42;
+    transition: all 0.2s;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 28px;
+    margin-top: 50px;
+}
+
+.conv-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.conv-btn:hover {
+    background-image: linear-gradient(
+      to right,
+      rgb(250, 82, 82),
+      rgb(250, 82, 82) 16.65%,
+      rgb(190, 75, 219) 16.65%,
+      rgb(190, 75, 219) 33.3%,
+      rgb(76, 110, 245) 33.3%,
+      rgb(76, 110, 245) 49.95%,
+      rgb(64, 192, 87) 49.95%,
+      rgb(64, 192, 87) 66.6%,
+      rgb(250, 176, 5) 66.6%,
+      rgb(250, 176, 5) 83.25%,
+      rgb(253, 126, 20) 83.25%,
+      rgb(253, 126, 20) 100%,
+      rgb(250, 82, 82) 100%
+    );
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+  }
+  
+  @keyframes dance6123 {
+    to {
+      background-position: var(--width);
+    }
+
+
+
+    
+  }
+
+  .social{
+    margin: 50px 0px;
+ }
+ #fontchg h1{
+    margin-top: 15px;
+    color: #ffffff;
+ }
+ #fontchg p{
+    margin-top: 9px;
+    font-size: 34px;
+    padding: 10px 130px;
+    text-align: center;
+ }
+ #colors{
+    color: #ffffff;
+ }
+ .iconsocial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 53px;
+ }
+ .iconsocial a{
+    text-decoration: none;
+    color: #333333;
+ }
+ .iconsocial a:hover{
+    color: #ffffff
+ }
+ .address{
+    margin: 21px 22px;
+    font-size: 30px;
+ }
+
+ .foot{
+    display: flex;
+    justify-content: space-around;
+ }
+ .designed{
+    margin: 30px;
+    text-align: center;
+    color: #333333;
+    font-size: 25px;
+    font-weight: 700;
+ }
+ .designed a{
+    text-decoration: none;
+    color: #333333;
+ }
+ .designed a:hover{
+    color: #2F80ED
+ }
+
+ .securess{
+    background-image: url("img/Desktop_bg-4dbf2c5439a471e08f0e7ef245a79664f033431b914125ba80217eb060675d91.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 89%;
+    margin-left: 66px;
+    margin-right: 22px;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    display: grid;
+    place-content: center;
+    gap: 22px;
+}
+.securess h2{
+   text-align: center;
+   padding-top: 40px;
+   font-size: 48px;
+   font-weight: 400;
+   color: #f3f3f3;
+}
+.securess h1{
+   text-align: center;
+   padding-top: 0px;
+   font-size: 48px;
+   font-weight: 700;
+   color: #002E6C;
+}
+
+
+
+
+
+
+  @media screen and (max-width: 1100px) {
+    .logo img{
+        height: 58px;
+        margin-top: 6px;
+        
+    }
+    nav ul li{
+        padding: 24px 16px;
+    }
+    .hero-text{
+        font-size: large;
+        padding: 210px 50px;
+    }
+    .hero-btn{
+        padding: 22px 40px;
+    }
+    .hero-btn1{
+        padding: 22px 40px;
+    }
+    .mySlides img{
+        height: 508px;
+        width: 539px;
+    }
+    .hero{
+        height: 580px;
+    }
+    .upimg img{
+        height: 250px;
+    }
+    #resizer{
+        font-size: 38px;
+    }
+    .whyup{
+        font-size: 20px;
+    }
+    .supporttext{
+        font-size: large;
+    }
+    .narayan{
+        margin: 40px 7px;
+    }
+    .square{
+        height: 938px;
+        width: 286px;
+  
+    }
+    .techimg img{
+        height: 200px;
+        width: 286px;
+    }
+    .teching2 img{
+        height: 70px;
+    width: 70px;
+    }
+    .techtexting1{
+        font-size: 18px;
+    }
+    .conversation{
+        width: 85%;
+    }
+    .conversation p{
+        font-size: 18px;
+    }
+
+
+
+    #fontchg h1{
+        margin-top: -60px;
+     }
+     #fontchg p{
+        margin-top: -14px;
+        font-size: 27px;
+     }
+     .phone img{
+        height: 50px;
+    margin-top: 31px;
+    margin-right: 31px;
+     }
+
+     .securess{
+        width: 85%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 975px) {
+    nav ul{
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 0px;
+        background-color: #f3f3f3;
+        height: 74vh;
+        width: 100%;
+        margin-top: -1289px;
+        transition: 0.5s ease-in-out;
+        
+
+    }
+
+    .fa-bars {
+        color: #241C2D;
+        float: right;
+        font-weight: 900;
+        font-size: 30px;
+        position: fixed;
+        top: 30px;
+        right: 5px;
+        width: 40px;
+        cursor: pointer;
+        visibility: visible;
+    
+   }
+   #contact{
+       background: none;
+       color: #333333;
+       display: flex;
+    justify-content: flex-start;
+    margin-left: -21px;
+   }
+   #contact a{
+       color: #333333;
+   }
+   #contact:hover{
+       background: none;
+   }
+   .active{
+    margin-top: 63px;
+   }
+   .hero-text{
+    width: 92%;
+    font-size: 26px;
+    padding: 43px 28px;
+   }
+   .hero{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1000px;
+  
+}
+.mySlides img{
+    width: 784px;
+    height: 461px;
+}
+
+.experience{
+    display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  place-content: center;
+  place-items: center;
+
+}
+.upskilling{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.whyup{
+    width: 90%;
+    margin-top: 16px;
+}
+.narayan{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 40px 49px;
+}
+.support p{
+    padding: 9px 49px;
+}
+.tech{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.conversation p{
+    font-size: 16px;
+}
+
+#fontchg p{
+    font-size: 21px;
+}
+#fontchg h1{
+    font-size: 31px;
+}
+.iconsocial{
+    font-size: 38px;
+}
+.foot{
+    flex-direction: column;
+}
+#margin1{
+    margin-left: 50px;
+}
+.securess h1{
+    font-size: 40px;
+}
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .logo img{
+        height: 40px;
+        margin-top: inherit;
+    }
+    .hero-text{
+        font-size: 16px;
+        width: 89%;
+        padding: 17px 13px;
+    }
+    .hero-text p{
+        font-size: large;
+    }
+    .mySlides img{
+        height: 428px;
+    width: 500px;
+    }
+    .hero{
+        height: 800px;
+    }
+    .experience img{
+        height: 70px;
+    }
+    .experience{
+        margin: 56px 0px;;
+    }
+    .upimg img{
+        height: 200px;
+    }
+    #resizer{
+        font-size: 24px;
+    }
+    .whyup{
+        font-size: 16px;
+    }
+    .upskilling{
+        margin-top: 40px;
+    }
+    .support{
+        font-size: 20px;
+    }
+    .company{
+        flex-direction: column;
+    align-items: center;
+    }
+    .narayan{
+        margin: 40px 19px;
+    }
+    .support p{
+        padding: 9px 19px;
+    }
+    .tech{
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 27px 27px;
+    }
+    .square{
+        width: 350px;
+    }
+    .techimg img{
+        width: 350px;
+    }
+    .conversation{
+        margin-left: 25px;
+        width: 89%;
+        height: 568px;
+
+    }
+    .conversation p{
+        padding: 0px 13px;
+    }
+    .conversation h1{
+        padding: 20px 1px;
+        
+    }
+    .conv-btn{
+        width: 300px;
+        font-size: 15px;
+    }
+
+    #fontchg p{
+        font-size: 19px;
+        padding: 10px 20px;
+    }
+    .iconsocial{
+        font-size: 35px;
+    }
+    #margin{
+        margin: 10px ;
+        
+    }
+    #fontchg h1{
+        margin-top: -18px;
+    }
+    .address{
+        font-size: 20px;
+        
+    }
+   
+    .phone img{
+        height: 45px;
+    }
+    .phone{
+        margin: 6px 15px;
+    }
+    #margin1{
+        margin-left: 10px;
+    }
+
+    .securess h2{
+        font-size: 35px;
+
+    }
+    .securess h1{
+        font-size: 40px;
+    }
+    .securess{
+        margin-left: 25px;
+        width: 89%;
+        display: grid;
+        place-items: center;
+    }
+   
+  
+ 
+
+}
+
+@media screen and (max-width: 435px) {
+    .mySlides img{
+        height: 428px;
+        width: 414px;
+    }
+    .upimg img{
+        height: 160px;
+    }
+    .support{
+        font-size: 16px;
+    }
+    .supporttext{
+        font-size: 13px;
+    }
+    .supportimg img{
+        height: 50px;
+    }
+    .support p{
+        padding: 9px 9px;
+    }
+    .square{
+        width: 300px;
+    }
+    .techimg img{
+        width: 300px;
+    }
+    .conv-btn{
+        font-size: 14px;
+    }
+    #margin1{
+        margin-left: 0px;
+    }
+
+    .securess h2{
+        font-size: 29px;
+
+    }
+    .securess h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+  
+    .mySlides img{
+        height: 279px;
+        width: 384px;
+    }
+    .experience{
+        margin: auto;
+    }
+    #margin{
+        margin: 8px ;
+    }
+   
+}
+
+@media screen and (max-width: 325px) {
+
+
+    .mySlides img{
+        height: 279px;
+    width: 274px;
+    }
+    .experience img{
+        height: 49px
+    }
+    .upimg img{
+        height: 120px;
+    }
+    .conversation{
+        margin-left: 14px;
+    }
+    .square{
+        width: 277px;
+    }
+    .techimg img{
+        width: 277px;
+    }
+    .conv-btn{
+        font-size: 12px;
+        width: 269px;
+    }
+    .conversation{
+        height: 633px;
+    }
+    #fontchg p{
+        font-size: 15px;
+    }
+    #fontchg h1{
+        font-size: 25px;
+    }
+    .iconsocial{
+        font-size: 26px;
+    }
+}
+

@@ -1,0 +1,1214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'jost', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 86px;
+    z-index: 1;
+    background-color: #f3f3f3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo{
+  position: fixed;
+  top: 9px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    font-family: 'jost', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333333;
+    margin: 5px 11px;
+    transition: all 0.5s ease-in-out;
+
+}
+nav ul li{
+    padding: 24px 24px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333333;
+  
+}
+nav ul li a:hover{
+    color: #2F80ED;
+}
+#contact{
+    position: relative;
+    padding: 0px 22px;
+    top: 4px;
+    height: 67px;
+    border-radius: 9px;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #2F80ED;
+    transition: all 0.5s ease-in-out;
+}
+#contact a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+#contact:hover{
+    background-color: #002E6C;
+}
+.fa-bars{
+    visibility: hidden;
+}
+.hero{
+    background-image: url("img/backgroundimg.webp");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 760px;
+    width: 100vw;
+}
+.hero-text{
+    padding: 237px 50px;
+    width: 41%;
+    font-size: x-large;
+
+}
+.hero-text p{
+    padding-top: 33px;
+}
+#color{
+    color: #2F80ED;
+}
+.hero-btn{
+    padding: 27px 63px;
+    margin-top: 27px;
+    border-radius: 13px;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #2F80ED;
+    transition: all 0.5s ease-in-out;
+    color: #f3f3f3;
+    font-family: 'jost', sans-serif;
+}
+
+.hero-btn a{
+    text-decoration: none;
+    color: #f3f3f3;
+}
+.hero-btn:hover{
+    background-color: #002E6C;
+
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+   
+  
+}
+.mySlides img{
+    height: 700px;
+    width: 800px;
+}
+.hero-img{
+  margin-top: 60px;
+  /* overflow: hidden; */
+}
+
+
+.mySlides {display: none;}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .exp{
+    display: flex;
+    justify-content: space-around;
+    margin: 65px 0px;
+    font-size: x-large;
+    font-family: 'jost', sans-serif;
+    color: #002E6C;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .aboutimg{
+    margin-left: 100px;
+  }
+
+  .aboutimg img{
+    height: 450px;
+    border-radius: 14px;
+  }
+  .about{
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-text{
+    width: 50%;
+    font-size: 25px;
+    font-family: 'jost', sans-serif;
+  }
+  .hero-btn1{
+    padding: 27px 63px;
+    margin-top: 27px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    background-color: #2F80ED;
+    transition: all 0.5s ease-in-out;
+    color: #f3f3f3;
+    font-family: 'jost', sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hero-btn1 a{
+    text-decoration: none;
+    color: #f3f3f3;
+  }
+  .hero-btn1:hover{
+    background-color: #002E6C;
+  }
+  .trainingword{
+    text-align: center;
+    margin-top: 40px;
+    font-size: x-large;
+    font-family: 'jost', sans-serif;
+    color: #002E6C;
+  }
+  .slider{
+    height: 250px;
+  width: 100%;
+  display: grid;
+   place-items: center;
+   overflow: hidden;
+  }
+
+  .slide-track{
+    display: flex;
+    width: calc(250px * 24);
+    animation: scroll 40s linear infinite;
+  }
+
+  .slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .slide img{
+    width: 100%;
+  }
+  
+
+
+  @keyframes scroll {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform:  translateX(calc(-250px * 12));
+    }
+  }
+
+
+  .learn{
+    text-align: center;
+    margin-top: 30px;
+    font-size: x-large;
+    font-family: 'jost', sans-serif;
+    color: #002E6C;
+  }
+
+  .learnimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+  }
+  .combine2{
+    margin-top: 41px;
+  }
+  #mad{
+    margin-left: -48px;
+  }
+  #mad4{
+    position: relative;
+    left: 55px;
+  }
+  .course{
+      text-align: center;
+      font-size: x-large;
+      font-family: 'jost', sans-serif;
+      color: #002E6C;
+      margin-top: 44px;
+  }
+ .courseimg1 img{
+    height: 315px;
+    width: 503px;
+    border-radius: 10px;
+ }
+ .coresimgall{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+
+ }
+ .coresimgall2{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+
+ }
+
+ .course-text{
+    font-size: x-large;
+    width: 50%;
+    margin-top: 30px;
+ }
+ .securess{
+     background-image: url("img/Desktop_bg-4dbf2c5439a471e08f0e7ef245a79664f033431b914125ba80217eb060675d91.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 400px;
+     width: 89%;
+     margin-left: 66px;
+     margin-right: 22px;
+     border-radius: 13px;
+     margin-bottom: 10px;
+     display: grid;
+     place-content: center;
+     gap: 22px;
+ }
+ .securess h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #f3f3f3;
+ }
+ .securess h1{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #002E6C;
+ }
+ .sec-btn{
+    padding: 30px 353px;
+    font-size: x-large;
+    background-color: #002E6C;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+ }
+
+ .sec-btn a{
+    text-decoration: none;
+    color: #f3f3f3;
+ }
+ .sec-btn:hover{
+    background-color: #2F80ED;
+ }
+ .coursetext11{
+    text-align: left;
+    margin: 36px;
+    font-size: x-large;
+    font-family: 'jost', sans-serif;
+    color: #002E6C;
+ }
+ .lesson{
+    background-color:#2F80ED ;
+    height: 100px;
+    width: 802px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .lesson p{
+    padding: 36px;
+    color: #f3f3f3;
+    font-weight: 700;
+    font-size: larger;
+ }
+ .module1{
+     height: 104px;
+     width: 352px;
+     background-color: #ffffff;
+     border-radius: 10px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     display: flex ;
+     justify-content: space-around;
+     margin: 20px;
+     
+     
+ }
+
+ .allmodules{
+    display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(3, 30fr);
+  gap: 30px;
+  place-items: center;
+ }
+ .modimg img{
+    height: 89px;
+    margin-top: 10px;
+    margin-left: -10px;
+ }
+ .modtext{
+    font-size: 22px;
+    margin-top: 34px;
+    font-weight: 700;
+    margin-left: -37px;
+ }
+ #modr{
+    margin-left: 19px;
+ }
+ #text1{
+    margin-top: 21px;
+    margin-left: 18px;
+ }
+ #text3{
+    margin-top: 20px;
+    margin-left: 0px;
+ }
+ #text4{
+    margin-top: 9px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ #text2{
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+ .modules{
+    margin: 20px;
+ }
+ #resize{
+    height: 65px;
+ }
+ #modr1{
+    margin-left: -11px;
+    height: 72px;
+ }
+ #margin{
+    margin-left: 0px;
+ }
+ .mission{
+    background-image: url("img/Desktop_bg-4dbf2c5439a471e08f0e7ef245a79664f033431b914125ba80217eb060675d91.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 89%;
+    margin-left: 66px;
+    margin-right: 22px;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .mission img{
+    height: 406px;
+    border-radius: 12px;
+    width: 600px;
+ }
+ .mission-text{
+    padding-left: 34px;
+ }
+ .mission-text h1{
+    font-size: 41px;
+    font-weight: 700;
+    color: #f3f3f3;
+ }
+ .mission-text h2{
+    font-size: 30px;
+    color: #333333;
+ }
+ .mission-text p{
+    font-size: larger;
+    color: #f3f3f3;
+ }
+ .testimonial{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 30fr);
+    gap: 30px;
+    place-items: center;
+    margin: 22px 0px;
+ }
+ .testi{
+    height: 739px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-style: solid;
+    border-color: #2F80ED;
+    border-width: thick;
+ }
+ .testiimg img{
+    padding: 10px 12px;
+    height: 170px;
+ }
+ .testext{
+    padding: 0px 8px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'jost', sans-serif;
+ }
+ .testext p{
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .testext  a{
+    text-decoration: none;
+    color: #000000;
+ }
+ .testext  a:hover{
+    color: #2F80ED;
+ }
+ .coma{
+    padding: 18px 7px ;
+ }
+ .testpara{
+    padding: 0px 16px;
+        font-size: 17px;
+ }
+ .social{
+    margin: 50px 0px;
+ }
+ #fontchg h1{
+    margin-top: 15px;
+    color: #ffffff;
+ }
+ #fontchg p{
+    margin-top: 9px;
+    font-size: 34px;
+    padding: 10px 130px;
+    text-align: center;
+ }
+ #colors{
+    color: #ffffff;
+ }
+ .iconsocial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 53px;
+ }
+ .iconsocial a{
+    text-decoration: none;
+    color: #333333;
+ }
+ .iconsocial a:hover{
+    color: #ffffff
+ }
+ .address{
+    margin: 21px 22px;
+    font-size: 30px;
+ }
+
+ .foot{
+    display: flex;
+    justify-content: space-around;
+ }
+ .designed{
+    margin: 30px;
+    text-align: center;
+    color: #333333;
+    font-size: 25px;
+    font-weight: 700;
+ }
+ .designed a{
+    text-decoration: none;
+    color: #333333;
+ }
+ .designed a:hover{
+    color: #2F80ED
+ }
+ html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1100px) {
+    .logo img{
+        height: 58px;
+        margin-top: 6px;
+        
+    }
+    nav ul li{
+        padding: 24px 16px;
+    }
+    .hero-text{
+        font-size: large;
+        padding: 210px 50px;
+    }
+    .hero-btn{
+        padding: 22px 40px;
+    }
+    .hero-btn1{
+        padding: 22px 40px;
+    }
+    .mySlides img{
+        height: 508px;
+        width: 539px;
+    }
+    .hero{
+        height: 580px;
+    }
+    .aboutimg img{
+        height: 350px;
+
+    }
+    .aboutimg{
+        margin-left: 40px;
+    }
+    .about-text{
+        font-size: 20px;
+    }
+    .learnimg1 img{
+        height: 100px;
+    }
+    .combine2{
+        margin-top: 17px;
+    }
+    .courseimg1 img{
+        height: 242px;
+        width: 389px;
+        border-radius: 10px;
+    }
+    .course-text{
+        margin-top: 0px;
+    }
+    .securess{
+        width: 85%;
+    }
+    .mission{
+        width: 85%;
+    }
+    .sec-btn{
+        padding: 30px 250px;
+    }
+    .lesson{
+        width: 689px;
+    }
+    .lesson p{
+        font-size: 16px;
+    }
+    .module1{
+        width: 284px;
+    }
+    .modtext{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .modimg img{
+        height: 72px;
+        margin-left: 0px;
+    }
+    #text1{
+        margin-top: 21px;
+        margin-left: 11px;
+        font-size: 18px;
+    }
+    #text3{
+        margin-top: 21px;
+        margin-left: 0px;
+        font-size: 18px;
+    }
+    .allmodules{
+        gap: 9px;
+    }
+    #resize{
+        height: 65px;
+    margin-left: -14px;
+    }
+    #text2{
+        margin-top: 22px;
+        font-size: 18px;
+        margin-left: 10px;
+     }
+     #text4{
+        font-size: 17px;
+     }
+     .mission img{
+        height: 406px;
+        border-radius: 12px;
+        width: 446px;
+     }
+     .testiimg img{
+         height: 138px;
+     }
+     .testi{
+        height: 741px;
+        width: 269px;
+     }
+     .testext P{
+        font-size: 18px;
+     }
+     #fontchg h1{
+        margin-top: -60px;
+     }
+     #fontchg p{
+        margin-top: -14px;
+        font-size: 27px;
+     }
+     .phone img{
+        height: 50px;
+    margin-top: 31px;
+    margin-right: 31px;
+     }
+  
+
+   
+
+}
+@media screen and (max-width: 975px) {
+    nav ul{
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 0px;
+        background-color: #f3f3f3;
+        height: 74vh;
+        width: 100%;
+        margin-top: -1289px;
+        transition: 0.5s ease-in-out;
+        
+
+    }
+
+    .fa-bars {
+        color: #241C2D;
+        float: right;
+        font-weight: 900;
+        font-size: 30px;
+        position: fixed;
+        top: 30px;
+        right: 5px;
+        width: 40px;
+        cursor: pointer;
+        visibility: visible;
+    
+   }
+   #contact{
+       background: none;
+       color: #333333;
+       display: flex;
+    justify-content: flex-start;
+    margin-left: -21px;
+   }
+   #contact a{
+       color: #333333;
+   }
+   #contact:hover{
+       background: none;
+   }
+   .active{
+    margin-top: 63px;
+   }
+   .hero-text{
+    width: 92%;
+    font-size: xx-large;
+    padding: 43px 28px;
+   }
+   .hero{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1000px;
+  
+}
+.mySlides img{
+    width: 784px;
+    height: 461px;
+}
+.about-text{
+    font-size: 15px;
+    width: 38%;
+}
+.learnimg{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#mad{
+    margin-left: 0px;
+}
+#mad4{
+    left: 0px;
+}
+.combine2{
+    margin: 30px;
+}
+.course{
+    font-size: 18px;
+}
+.courseimg1 img{
+    height: 203px;
+    width: 310px;
+}
+.course-text{
+    font-size: larger;
+    width: 47%;
+}
+.securess h1{
+    font-size: 40px;
+}
+.sec-btn{
+    padding: 30px 180px;
+}
+.lesson{
+    width: 614px;
+}
+.module1{
+    width: 285px;
+    margin: 18px;
+
+}
+.modimg img{
+    height: 72px;
+    margin-left: -10px;
+}
+.modtext{
+    font-size: 19px;
+    margin-left: -25px;
+}
+.allmodules{
+    display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(2, 30fr);
+  gap: 30px;
+}
+#text4{
+    font-size: 18px;
+}
+.mission{
+    flex-direction: column-reverse;
+    width: 85%;
+    height: 620px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mission img{
+    width: 652px;
+}
+.mission-text{
+    padding-top: 20px;
+}
+.mission-text h1{
+    font-size: 37px;
+}
+.testimonial{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 30fr);
+    gap: 30px;
+}
+#fontchg p{
+    font-size: 21px;
+}
+#fontchg h1{
+    font-size: 31px;
+}
+.iconsocial{
+    font-size: 38px;
+}
+.foot{
+    flex-direction: column;
+}
+#margin1{
+    margin-left: 50px;
+}
+.video{
+    width: 100%;
+    /* margin-top: 221px; */
+    position: absolute;
+    top: 34%;
+}
+.video video{
+    width: 100%;
+}
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .logo{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .logo img{
+        height: 40px;
+        margin-top: inherit;
+    }
+    .hero-text{
+        font-size: 16px;
+        width: 89%;
+        padding: 17px 13px;
+    }
+    .hero-text p{
+        font-size: large;
+    }
+    .mySlides img{
+        height: 428px;
+    width: 500px;
+    }
+    .exp{
+        font-size: 14px;
+    }
+    .hero{
+        height: 800px;
+    }
+    .aboutimg img{
+        height: 300px;
+    }
+    .aboutimg{
+        margin-left: 10px;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text{
+        font-size: 15px;
+    width: 90%;
+    margin-top: 16px;
+    }
+    .trainingword{
+        font-size: 17px;
+    }
+    .learn{
+        font-size: large;
+    }
+    .combine img{
+        height: 80px;
+
+    }
+    .combine3 img{
+        height: 80px;
+    }
+    .combine2 img{
+        height: 195px;
+    }
+    .coresimgall{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .coresimgall2{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .courseimg1 img{
+        height: 225px;
+        width: 345px;
+    }
+    .course-text{
+        font-size: 19px;
+    width: 100%;
+    margin-top: 10px;
+    }
+    .course{
+        font-size: 17px;
+    }
+    .securess{
+        margin-left: 25px;
+        width: 89%;
+        display: grid;
+        place-items: center;
+    }
+
+    .securess h2{
+        font-size: 35px;
+
+    }
+    .securess h1{
+        font-size: 40px;
+    }
+    .sec-btn{
+        padding: 0px 0px;
+    height: 83px;
+    width: 400px;
+   
+    }
+    .coursetext11{
+        margin: 18px;
+        font-size: medium;
+    }
+    .lesson{
+        width: 320px;
+        margin-left: 14px;
+        flex-direction: column;
+        height: auto;
+    }
+    .lesson p{
+        padding: 15px;
+        font-size: 19px;
+    }
+   
+    .module1{
+        margin: 14px;
+    }
+    .allmodules{
+        margin: 0px;
+    }
+    .allmodules{
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+      grid-template-columns: 30fr;
+      gap: 30px;
+    }
+    .modules{
+        margin: 20px;
+    }
+    #text1{
+        margin-top: 25px;
+    }
+    #text3{
+        margin-top: 25px;
+    }
+    #text4{
+        margin-top: 14px;
+        margin-left: 18px;
+        font-size: 18px;
+    }
+    #text2{
+        margin-top: 20px;
+    }
+   
+    .mission img{
+ 
+        width: 362px;
+    height: 245px;
+   
+    }
+    .mission{
+        margin-left: 30px;
+    }
+    .mission img{
+        width: 430px;
+    }
+    .mission-text{
+        padding-top: 33px;
+    }
+    .mission-text h1{
+        font-size: 30px;
+    }
+    .testimonial{
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+      grid-template-columns: 30fr;
+      gap: 30px;
+    }
+
+    #fontchg p{
+        font-size: 19px;
+        padding: 10px 20px;
+    }
+    .iconsocial{
+        font-size: 35px;
+    }
+    #margin{
+        margin: 10px ;
+        
+    }
+    #fontchg h1{
+        margin-top: -18px;
+    }
+    .address{
+        font-size: 20px;
+        
+    }
+   
+    .phone img{
+        height: 45px;
+    }
+    .phone{
+        margin: 6px 15px;
+    }
+    #margin1{
+        margin-left: 10px;
+    }
+   
+  
+  
+}
+
+
+
+@media screen and (max-width: 435px) {
+    .mySlides img{
+        height: 428px;
+        width: 414px;
+    }
+    .aboutimg img{
+        height: 260px;
+    }
+    .course-text{
+        font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    }
+    .securess h2{
+        font-size: 29px;
+
+    }
+    .securess h1{
+        font-size: 30px;
+    }
+    .sec-btn{
+        padding: 0px 0px;
+    height: 83px;
+    width: 305px;
+  
+    }
+    .mission img{
+        width: 354px;
+    }
+    .mission-text h1{
+        font-size: 30px;
+    }
+    .mission-text h2{
+        font-size: 26px;
+    }
+    #margin1{
+        margin-left: 0px;
+    }
+   
+   
+  
+
+}
+
+
+@media screen and (max-width: 395px) {
+  
+    .mySlides img{
+        height: 279px;
+        width: 384px;
+    }
+    .learn{
+        font-size: medium;
+    }
+    .mission img{
+        width: 319px;
+    }
+    #margin{
+        margin: 8px ;
+    }
+   
+}
+
+@media screen and (max-width: 325px) {
+
+
+    .mySlides img{
+        height: 279px;
+    width: 274px;
+    }
+
+    .combine2 img{
+        height: 147px;
+    }
+    .courseimg1 img{
+        height: 225px;
+        width: 247px;
+    }
+    .sec-btn{
+       height: 83px;
+       width: 221px;
+    }
+    .securess{
+        margin-left: 14px;
+    }
+    .lesson{
+        width: 250px;
+    }
+    .module1{
+        width: 230px;
+        height: 80px;
+    }
+    .modimg img{
+        height: 52px;
+    }
+    .modtext{
+        font-size: 16px;
+    margin-left: -8px;
+    margin-top: 27px;
+    }
+    #text1{
+        margin-top: 17px;
+        font-size: 15px;
+    }
+    #text3{
+        margin-top: 17px;
+        font-size: 15px;
+    }
+    #resize{
+        height: 50px;
+    }
+    #text2{
+        margin-top: 7px;
+    font-size: 15px;
+    }
+    #text4{
+        font-size: 14px;
+    }
+    .mission img{
+        width: 270px;
+    }
+    .testi{
+        width: 251px;
+    }
+    .testpara{
+        font-size: 15px;
+    }
+    #fontchg p{
+        font-size: 15px;
+    }
+    #fontchg h1{
+        font-size: 25px;
+    }
+    .iconsocial{
+        font-size: 26px;
+    }
+}
